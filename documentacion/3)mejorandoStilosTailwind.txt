@@ -1,0 +1,14 @@
+TailwildCss
+framwework cd estilos si me sirve es necesario aprenderlo
+
+https://tailwindcss.com/docs/installation
+
+
+--desde nuestro proyecto en laravel
+tenemos que agregar el recurso en el webpack de laravel
+investigue como instalarlo en el curso usan un cdn
+webpack.mix.js
+
+
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+

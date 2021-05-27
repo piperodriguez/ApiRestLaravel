@@ -1,0 +1,46 @@
+crear la primera version del api
+
+1) configuracion -> de archivos para que retornen 1 o varios elementos segun la necesitdad
+
+2) recurso ->
+
+3) coleccion ->
+
+
+--crear controller
+
+
+php artisan make:controller Api/V1/PostController --api --model=Post
+
+se trabaja en el metodo show de listar
+
+ahora configurar las rutas de la API
+
+C:\xampp\htdocs\apiRestLaravel\routes\api.php
+
+
+Route::apiResource('v1/posts', App\Http\Controllers\Api\V1\PostController::class);
+
+--especiifcar metodo
+Route::apiResource('v1/posts', App\Http\Controllers\Api\V1\PostController::class)->only('show');
+
+define la ruta, ahora listarlas por terminal
+
+
+php artisan route:list
+
+listo ahora simulemos la peticion del api
+con postman
+
+
+http://127.0.0.1:8000/api/v1/posts/1
+
+{
+    "id": 1,
+    "user_id": 10,
+    "title": "El día de hoy",
+    "slug": "La grabacion del carro que pasa por el barrio",
+    "content": "Buenas Buenas El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,El día de hoy,",
+    "created_at": "2021-05-26T21:02:00.000000Z",
+    "updated_at": "2021-05-26T21:02:00.000000Z"
+}

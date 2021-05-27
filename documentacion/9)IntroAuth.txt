@@ -1,0 +1,31 @@
+configuracion para que quien desee consumir los datos
+tengan que realizar un inicio de session
+retorne un token
+
+
+--utilizamos este componente de laravel
+
+composer require laravel/sanctum
+
+ahora en el archivo de rutas de la api
+
+api.php
+
+se le define el metodo middleware('auth:sanctum')
+
+-Posteriormente ejecutamos la migracion
+
+php artisan migrate
+
+y se crea la tabla create_personal_access_tokens_table
+
+se utiliza mara almacenar los tokens
+
+
+la autenticacion a la api se envia por los encabezados HEADERS
+la app que vaya a consumir la API
+tiene que realizar la petición informando qye es uuna aplicacion/json
+
+en los encabezados definimos que acepte aplicaciones tipo json
+
+

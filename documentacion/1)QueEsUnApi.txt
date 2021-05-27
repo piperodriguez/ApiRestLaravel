@@ -1,0 +1,9 @@
+Que es un Api ?
+
+ofrece cierta biblioteca para ser utilizada en otro software,
+
+fragmento cod que se aloja en un servidor, esperando que otro software se conecte y realize peticiones
+
+ejemplo: cliente  -> realiza peticion
+Servidor -> entrega informacion
+

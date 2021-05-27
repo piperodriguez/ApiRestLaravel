@@ -1,0 +1,39 @@
+Fabricar sistema de autenticacion
+
+
+creamos un controlador 
+
+php artisan make:controller Api/LoginController
+
+posteriormente definimos la ruta apuntando al controlador creado
+
+luego en el modelo de usuarios definimos que la auth se va a trabajar por medio de tokens
+
+use Laravel\Sanctum\HasApiTokens;
+
+
+Acceso al sistema
+desde postman
+
+http://127.0.0.1:8000/api/login
+
+si enviamos por POST 
+
+{
+    "message": "The given data was invalid.",
+    "errors": {
+        "email": [
+            "The email field is required."
+        ],
+        "password": [
+            "The password field is required."
+        ],
+        "name": [
+            "The name field is required."
+        ]
+    }
+}
+
+ahora en la pestaña Body seleccionamos la opcion form data
+
+

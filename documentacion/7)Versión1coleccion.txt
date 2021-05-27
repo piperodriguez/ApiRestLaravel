@@ -1,0 +1,15 @@
+hacer cbifugyracuibn opara retorinar coleccion de datos que permita paginar
+
+vamos a modificar el archivo de las rutas
+
+api.php
+
+que retorne muchos datos
+ en la ruta definimos que tambien se use el metodo index del controlador
+
+
+ejercicio del profe
+
+realizar el delete
+
+que retorne estado 204

@@ -1,0 +1,4 @@
+Se crea una clase para dar mejor formato a la data
+
+
+php artisan make:resource V1/PostResource

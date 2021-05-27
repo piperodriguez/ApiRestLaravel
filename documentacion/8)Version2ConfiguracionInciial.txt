@@ -1,0 +1,19 @@
+se trabaja en la version 2 del api para que las modificaciones no afecten a los usuarios de la version 1
+
+version 2, vamos a agregar nuevas funcionalidades al API
+
+1) creamos controlador modelo para api
+
+php artisan make:controller Api/V2/PostController --api --model=Post
+
+--creamos recursos
+
+php artisan make:resource V2/PostResource
+
+php artisan make:resource V2/PostCollection
+
+ahora definir rutas
+
+
+
+https://developers.conekta.com/reference/autenticaci%C3%B3n

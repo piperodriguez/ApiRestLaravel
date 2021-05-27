@@ -1,0 +1,45 @@
+crear un proyecto en laravel 
+
+composer create-project laravel/laravel apiRestLaravel
+
+
+1) creamos controlador, modelo y factory para el objeto Post
+
+php artisan make:model Post -cmf
+ 
+ Configurar: 
+
+ Migracion ---POST
+
+ --definir colu,ma titulo
+
+ --definir colu,ma slug unico
+
+ --definir colu,ma text
+
+ --Crear relacion a la tabla usuarios
+
+
+ Factorys --POST
+
+ Seedes --Post
+
+ Crar base de datos y configurar .env
+
+
+ ejecutar migraciones &&  seeders
+
+ php artisan migrate
+
+ php artisan db:seed
+
+
+
+ el profe lo ejecuto artisan
+
+ php artisan migrate --seed 
+
+ --Ahora liste los datos en una vista desde el navegador
+
+
+ 
